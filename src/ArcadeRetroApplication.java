@@ -45,6 +45,12 @@ public class ArcadeRetroApplication {
 				service.showGames();
 				break;
 			}
+			case 3:
+			{
+				System.out.println("inserire parola chiave");
+				String word = scanner.nextLine();
+				service.searchGame(word);
+			}
 			default:
 				System.out.println("inserire un valore corretto");
 				break;

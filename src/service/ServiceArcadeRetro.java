@@ -25,8 +25,23 @@ public class ServiceArcadeRetro {
 			{
 				System.out.println(games.toString());
 			}
+		}	
+	}
+	public void searchGame(String n)
+	{
+		boolean check = false;
+		for(int i = 0; i < games.size(); i++)
+		{
+			if(games.get(i).getName().contains(n));
+			{
+				check = true;
+				System.out.println(games.get(i).getName());
+			}
+			
 		}
-		
-		
+		if(check == false)
+		{
+			System.out.println("non è stato trovato nessun gioco");
+		}
 	}
 }
