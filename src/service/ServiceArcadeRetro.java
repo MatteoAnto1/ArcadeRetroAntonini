@@ -23,7 +23,7 @@ public class ServiceArcadeRetro {
 		{
 			for( int i = 0; i < games.size(); i++)
 			{
-				System.out.println(games.toString());
+				System.out.println(games.get(i).toString());
 			}
 		}	
 	}
@@ -32,16 +32,32 @@ public class ServiceArcadeRetro {
 		boolean check = false;
 		for(int i = 0; i < games.size(); i++)
 		{
-			if(games.get(i).getName().contains(n));
+			if(games.get(i).getName().contains(n))
 			{
 				check = true;
-				System.out.println(games.get(i).getName());
+				System.out.println(games.get(i));
 			}
 			
 		}
 		if(check == false)
 		{
 			System.out.println("non è stato trovato nessun gioco");
+		}
+	}
+	public void hardDifficult()
+	{
+		boolean check = false;
+		for(int i = 0; i < games.size(); i++)
+		{
+			if(games.get(i).getLevel()>=4)
+			{
+				check = true;
+				System.out.println(games.get(i).toString());
+			}
+		}
+		if(check == false)
+		{
+			System.out.println("non è stato trovato nessun gioco con difficoltà maggiore o uguale a 4");
 		}
 	}
 }
