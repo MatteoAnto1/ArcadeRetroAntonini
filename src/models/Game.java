@@ -32,6 +32,6 @@ public class Game {
 	public String toString() {
 		return "Gioco [name=" + name + ", releaseDate=" + releaseDate + ", level=" + level + "]";
 	}
-	
-	
+
+
 }

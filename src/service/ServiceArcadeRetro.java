@@ -44,12 +44,12 @@ public class ServiceArcadeRetro {
 			System.out.println("non è stato trovato nessun gioco");
 		}
 	}
-	public void hardDifficult()
+	public void hardDifficult(int minLevel)
 	{
 		boolean check = false;
 		for(int i = 0; i < games.size(); i++)
 		{
-			if(games.get(i).getLevel()>=4)
+			if(games.get(i).getLevel()>=minLevel)
 			{
 				check = true;
 				System.out.println(games.get(i).toString());

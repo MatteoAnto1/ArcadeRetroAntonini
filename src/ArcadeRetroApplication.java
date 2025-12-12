@@ -54,7 +54,10 @@ public class ArcadeRetroApplication {
 			}
 			case 4:
 			{
-				service.hardDifficult();
+				System.out.println("inserire in livello di difficolta minimo");
+				int minLevel = scanner.nextInt();
+				scanner.nextLine();
+				service.hardDifficult(minLevel);
 				break;
 			}
 			case 5:
