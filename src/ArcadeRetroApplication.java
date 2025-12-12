@@ -38,9 +38,16 @@ public class ArcadeRetroApplication {
 				}
 				while(level<0 || level>5);
 				service.addGame(name,releaseDate,level);
+				break;
+			}
+			case 2:
+			{
+				service.showGames();
+				break;
 			}
 			default:
-				throw new IllegalArgumentException("Unexpected value: " + choice);
+				System.out.println("inserire un valore corretto");
+				break;
 			}
 		}while(isRunning);
 		

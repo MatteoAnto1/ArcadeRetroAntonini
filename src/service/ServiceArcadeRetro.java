@@ -12,4 +12,21 @@ public class ServiceArcadeRetro {
 		Game game = new Game(n,d,l);
 		this.games.add(game);
 	}
+	
+	public void showGames()
+	{
+		if(games.size()==0)
+		{
+			System.out.println("non ci sono giochi");
+		}
+		else
+		{
+			for( int i = 0; i < games.size(); i++)
+			{
+				System.out.println(games.toString());
+			}
+		}
+		
+		
+	}
 }
